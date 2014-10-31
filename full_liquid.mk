@@ -18,11 +18,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from armani device
-$(call inherit-product, device/xiaomi/armani/device.mk)
+$(call inherit-product, device/walton/primos2/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_DEVICE := armani
-PRODUCT_NAME := full_armani
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := HM 1S
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_DEVICE := walton
+PRODUCT_NAME := primos2
+PRODUCT_BRAND := walton
+PRODUCT_MODEL := s2
+PRODUCT_MANUFACTURER := walton
