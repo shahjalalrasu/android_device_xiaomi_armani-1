@@ -15,7 +15,7 @@
 #
 
 # Include path
-TARGET_SPECIFIC_HEADER_PATH := device/xiaomi/armani/include
+TARGET_SPECIFIC_HEADER_PATH := device/walton/primos2/include
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8226
@@ -35,7 +35,7 @@ TARGET_CPU_SMP := true
 TARGET_CPU_VARIANT := krait
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/xiaomi/armani/kernel
+TARGET_PREBUILT_KERNEL := device/walton/primos2/kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/armani
 TARGET_KERNEL_CONFIG := cm_msm8226_perf_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37
@@ -43,7 +43,7 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
-BOARD_CUSTOM_BOOTIMG_MK := device/xiaomi/armani/mkbootimg_pre.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/walton/primos2/mkbootimg_pre.mk
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
@@ -53,7 +53,7 @@ AUDIO_FEATURE_DISABLED_DS1_DOLBY_DDP := true
 AUDIO_FEATURE_DISABLED_SSR := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/xiaomi/armani/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/walton/primos2/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
@@ -85,7 +85,7 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 TARGET_NO_RPC := true
 
 # Graphics
-BOARD_EGL_CFG := device/xiaomi/armani/configs/egl.cfg
+BOARD_EGL_CFG := device/walton/primos2/configs/egl.cfg
 TARGET_QCOM_DISPLAY_VARIANT := caf-legacy
 TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
@@ -119,7 +119,7 @@ TARGET_USES_QCOM_BSP := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DQCOM_BSP
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/xiaomi/armani/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/walton/primos2/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_HAS_NO_SELECT_BUTTON := true
@@ -128,7 +128,7 @@ BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/xiaomi/armani/sepolicy
+    device/walton/primos2/sepolicy
 
 # The list below is order dependent
 BOARD_SEPOLICY_UNION += \
@@ -158,4 +158,4 @@ WIFI_DRIVER_MODULE_NAME := "wlan"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/xiaomi/armani/BoardConfigVendor.mk
+-include vendor/walton/primos2/BoardConfigVendor.mk
