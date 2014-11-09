@@ -36,7 +36,7 @@ TARGET_CPU_VARIANT := krait
 
 # Kernel
 TARGET_PREBUILT_KERNEL := device/walton/primos2/kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/armani
+TARGET_KERNEL_SOURCE := kernel/walton/primos2
 TARGET_KERNEL_CONFIG := cm_msm8226_perf_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37
 BOARD_KERNEL_BASE := 0x00000000
