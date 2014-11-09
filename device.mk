@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Proprietary files
-$(call inherit-product, vendor/xiaomi/armani/armani-vendor.mk)
+$(call inherit-product, vendor/walton/primos2/primos2-vendor.mk)
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
